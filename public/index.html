@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Shopping List</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <script type="module" src="./app.js"></script>
+</head>
+
+<body>
+    <h1>My Shopping List</h1>
+
+    <section id="whenSignedOut">
+        <button id="signInButton">
+            Sign in with Google
+        </button>
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+        <button id="signOutButton">
+            Sign out
+        </button>
+        <div id="userDetails"></div>
+        <section class="shopping-list">
+            <button id="addRandomItem">Add Random Product</button>
+            <ul id="itemsList"></ul>
+        </section>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Edit Product</h2>
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editItem">Item:</label>
+                        <input type="text" id="editItem" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPrice">Price:</label>
+                        <input type="number" id="editPrice" step="0.01" min="0" required>
+                    </div>
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

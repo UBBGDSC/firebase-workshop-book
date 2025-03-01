@@ -1,0 +1,208 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#signInButton, #signOutButton {
+    background-color: #4285f4;
+    color: white;
+}
+
+#signInButton:hover, #signOutButton:hover {
+    background-color: #3367d6;
+}
+
+#addRandomItem {
+    background-color: #34a853;
+    color: white;
+    margin-top: 20px;
+}
+
+#addRandomItem:hover {
+    background-color: #2d8745;
+}
+
+.delete-btn {
+    background-color: #ff4444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.edit-btn {
+    background-color: #fbbc05;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.edit-btn:hover {
+    background-color: #f9ab00;
+}
+
+/* List styles */
+#itemsList {
+    list-style: none;
+    padding: 0;
+}
+
+#itemsList li {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+#itemsList li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* User details styles */
+#userDetails {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#userDetails img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#userDetails p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Product styles */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #333;
+    margin-right: 12px;
+}
+
+.product-price {
+    color: #34a853;
+    font-weight: 500;
+}
+
+.product-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 2px rgba(66,133,244,0.2);
+}
+
+.save-btn {
+    background-color: #34a853;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background-color: #2d8745;
+} 
